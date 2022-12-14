@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><body>
+<p style="padding:0px 20px;color:slateblue">Click play to start 15 minute interval loop.</p>
+<p><audio controls id="linkAudio"><source src="chouette.ogg" type="audio/ogg"></audio></p>
+<p><img src="chouette.jpg"/></p>
+<script>
+  var aud = document.getElementById('linkAudio');
+//      aud.volume = 0.1;
+  setInterval(function(){
+      aud.play();
+  }, 1000*15*60); 
+</script></body></html>
